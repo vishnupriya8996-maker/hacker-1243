@@ -23,7 +23,7 @@ const ChatMessage = ({ role, content }: ChatMessageProps) => {
       </div>
       <div className="flex-1 min-w-0">
         <p className="text-xs font-medium text-muted-foreground mb-1.5">
-          {isUser ? "You" : "Gemini"}
+          {isUser ? "You" : "AI"}
         </p>
         <div className="prose-chat text-foreground text-[15px] leading-relaxed whitespace-pre-wrap">
           {content}

@@ -52,7 +52,7 @@ const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
         </button>
       </div>
       <p className="text-xs text-muted-foreground text-center mt-3">
-        Gemini can make mistakes. Check important info.
+        AI can make mistakes. Check important info.
       </p>
     </div>
   );
