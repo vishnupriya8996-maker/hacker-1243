@@ -38,7 +38,7 @@ const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Ask Gemini anything..."
+          placeholder="Ask me anything..."
           disabled={disabled}
           rows={1}
           className="flex-1 bg-transparent text-foreground placeholder:text-muted-foreground resize-none px-5 py-4 text-[15px] outline-none max-h-[200px]"
@@ -52,7 +52,7 @@ const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
         </button>
       </div>
       <p className="text-xs text-muted-foreground text-center mt-3">
-        Gemini can make mistakes. Check important info.
+        AI can make mistakes. Check important info.
       </p>
     </div>
   );
