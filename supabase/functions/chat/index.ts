@@ -6,11 +6,14 @@ const corsHeaders = {
 };
 
 serve(async (req) => {
+  console.log("Chat function invoked, method:", req.method);
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
 
   try {
     const { messages } = await req.json();
+    console.log("Received messages:", JSON.stringify(messages));
     const GEMINI_API_KEY = Deno.env.get("GEMINI_API_KEY");
+    console.log("GEMINI_API_KEY present:", !!GEMINI_API_KEY);
     if (!GEMINI_API_KEY) throw new Error("GEMINI_API_KEY is not configured");
 
     // Convert messages to Gemini format
